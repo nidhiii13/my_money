@@ -27,6 +27,7 @@ Open browser : http://localhost:3000/ for homepage
 Open Terminal and run the following commands
 ```
 cd money_tracker_backend
+virtualenv venv (create virtual environment)
 venv\Scripts\activate 
 pip install -r requirements.txt  (install the python dependencies)
 python manage.py makemigrations
