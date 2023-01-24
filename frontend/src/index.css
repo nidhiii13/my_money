@@ -1,0 +1,219 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: var(--jakarta-font);
+}
+
+/* these 2 classes are required to style dots of Carousel component in ProductCard*/
+
+.react-multi-carousel-dot button {
+  border-color: var(--blue-body);
+}
+
+.react-multi-carousel-dot--active button {
+  background: var(--primary-blue);
+  border-color: var(--blue-body);
+}
+
+:root {
+  /* primary fonts */
+  --inter-font: "Inter", sans-serif;
+  --jakarta-font: "Plus Jakarta Sans", sans-serif;
+  --sora-font: "Sora", sans-serif;
+
+  /* derived fonts */
+  --heading-font: var(--sora-font);
+  --para-font: var(--jakarta-font);
+
+  /* primary colors */
+  --primary-dark: #0b2a4d;
+  --primary-blue: rgb(22, 81, 136);
+  --primary-orange: #ffb600;
+  --primary-yellow: #ffdc37;
+  --primary-white: #fff;
+  --primary-green: #00b300;
+  --primary-red: #ff0000;
+  --primary-black: #000;
+  --background-blue: #1065c1;
+  --primary-yellow-white-background: #ffbd3b;
+  --primary-red-white-background: #fe5f55;
+  --blue-body: #083d77;
+  --light-blue: #dfebf6;
+  --grey-100: #f9fafb;
+  --grey-200: #f4f6f8;
+  --grey-300: #dfe3e8;
+  --grey-400: #c4cdd5;
+  --grey-500: #919eab;
+  --grey-600: #637381;
+  --grey-700: #454f5b;
+  --grey-800: #212b36;
+  --grey-900: #161c24;
+  --grey-500-transparent-8: rgba(145, 158, 171, 0.08);
+  --grey-500-transparent-12: rgba(145, 158, 171, 0.12);
+  --grey-500-transparent-16: rgba(145, 158, 171, 0.16);
+  --grey-500-transparent-24: rgba(145, 158, 171, 0.24);
+  --grey-500-transparent-32: rgba(145, 158, 171, 0.32);
+  --grey-500-transparent-48: rgba(145, 158, 171, 0.48);
+  --green-transparent-20: rgba(0, 179, 0, 0.2);
+  --primary-red-white-background-20: rgba(254, 95, 85, 0.2);
+
+  /* derived colors */
+  --primary-fill-color: var(--primary-blue);
+
+  /* Other Variables */
+  --nav-height: 88px;
+  --gutter: 120px;
+  --whitelist-footer-height: 40px;
+  --primary-width: 700px;
+
+  /* background colors */
+  --background-blue: #1065c1;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--grey-800);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  /* background: var(--background-blue); */
+  background: #605f5f;
+}
+
+@media only screen and (max-width: 750px) {
+  :root {
+    --primary-width: 400px;
+  }
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  :root {
+    --nav-height: 64px;
+    --gutter: 12px;
+  }
+}
+
+
+/* h1 {
+  font-size: 80px;
+  font-weight: 700;
+}
+h2 {
+  font-size: 64px;
+  font-weight: 700;
+}
+h3 {
+  font-size: 48px;
+  font-weight: 700;
+}
+h4 {
+  font-size: 36px;
+  font-weight: 700;
+}
+h5 {
+  font-size: 30px;
+  font-weight: 700;
+}
+h6 {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 1200px) {
+  h1 {
+    font-size: 64px;
+    font-weight: 700;
+  }
+  h2 {
+    font-size: 48px;
+    font-weight: 700;
+  }
+  h3 {
+    font-size: 32px;
+    font-weight: 700;
+  }
+  h4 {
+    font-size: 24px;
+    font-weight: 700;
+  }
+  h5 {
+    font-size: 20px;
+    font-weight: 700;
+  }
+  h6 {
+    font-size: 18px;
+    font-weight: 700;
+  }
+}
+@media only screen and (max-width: 600px) {
+  :root {
+    --gutter: 5px;
+  }
+
+  h1 {
+    font-size: 50px;
+    font-weight: 700;
+  }
+  h2 {
+    font-size: 42px;
+    font-weight: 700;
+  }
+  h3 {
+    font-size: 36px;
+    font-weight: 700;
+  }
+  h4 {
+    font-size: 30px;
+    font-weight: 700;
+  }
+  h5 {
+    font-size: 27px;
+    font-weight: 700;
+  }
+  h6 {
+    font-size: 26px;
+    font-weight: 700;
+  }
+}
+@media only screen and (max-width: 500px) {
+  h1 {
+    font-size: 40px;
+    font-weight: 700;
+  }
+  h2 {
+    font-size: 32px;
+    font-weight: 700;
+  }
+  h3 {
+    font-size: 24px;
+    font-weight: 700;
+  }
+  h4 {
+    font-size: 20px;
+    font-weight: 700;
+  }
+  h5 {
+    font-size: 18px;
+    font-weight: 700;
+  }
+  h6 {
+    font-size: 17px;
+    font-weight: 700;
+  }
+} */

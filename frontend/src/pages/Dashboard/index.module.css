@@ -1,0 +1,106 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.dashboard {
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+  color: var(--primary-orange);
+}
+
+.detailsCard {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: var(--primary-width);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 15px;
+  padding: 1.5rem 1rem;
+}
+
+.name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--background-blue);
+  margin-bottom: 5px;
+}
+
+.leftDetails {
+  font-size: 1.2rem;
+}
+
+.rightDetails {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: var(--primary-orange);
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.friends,
+.buttonMenu {
+  width: var(--primary-width);
+}
+
+.friendsCard {
+  width: 100%;
+}
+
+.buttonMenu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.button {
+  background-color: var(--primary-orange);
+  border: 0;
+  border-radius: 10px;
+  padding: 0.5rem 2rem;
+  color: var(--primary-white);
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: 0.3s box-shadow;
+}
+
+.button:hover {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+@media only screen and (max-width: 750px) {
+  .buttonMenu {
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+    margin-top: 0;
+  }
+
+  .button{
+    margin-top: 1rem;
+    width: 100%;
+  }
+
+  .friends {
+    padding: 1rem;
+  }
+
+  .name{
+    font-size: 1.2rem;
+  }
+
+  .leftDetails{
+    font-size: 1rem;
+  }
+}

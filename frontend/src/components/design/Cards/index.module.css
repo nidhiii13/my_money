@@ -1,0 +1,148 @@
+.friendCard {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 15px 15px 5px;
+  border-bottom: 2px solid #d3d3d3;
+  transition: 1s box-shadow;
+  margin-bottom: 10px;
+}
+
+.cursorPointer {
+  cursor: pointer;
+}
+
+.profit:hover {
+  border-bottom: 2px solid #77dd77;
+}
+
+.loss:hover {
+  border-bottom: 2px solid #ff6961;
+}
+
+.normal:hover {
+  border-bottom: 2px solid #333;
+}
+
+.profitLabel {
+  color: #2e9f2e;
+}
+
+.lossLabel {
+  color: #e8473f;
+}
+
+.normalLabel {
+  color: #605f5f;
+}
+
+.bodyText {
+  font-size: 1.2rem;
+  /* font-weight: bold; */
+}
+
+.subBodyText {
+  font-size: 0.9rem;
+  color: #605f5f;
+  margin-top: 0.2rem;
+}
+
+.groupCard {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  margin-top: 1.5rem;
+  border-radius: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.groupDetails {
+  width: 100%;
+  margin-bottom: 1.6rem;
+}
+
+.groupName {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--background-blue);
+  margin-bottom: 5px;
+}
+
+.groupDescription {
+  font-size: 1rem;
+}
+
+.groupButtons {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.groupButton {
+  border: 0;
+  border-radius: 10px;
+  padding: 1rem;
+  cursor: pointer;
+  font-size: 1.2rem;
+  min-height: 5rem;
+  min-width: 5rem;
+  color: var(--primary-white);
+}
+
+.deletButton {
+  background-color: var(--primary-red);
+  transition: 0.3s box-shadow;
+  width: 6rem;
+}
+
+.editButton {
+  background-color: var(--primary-green);
+  transition: 0.3s box-shadow;
+  width: 6rem;
+}
+
+.groupButton:hover {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.membersCard {
+  color: var(--primary-orange);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  cursor: pointer;
+  text-align: center;
+  font-weight: bold;
+}
+
+.member {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 10px;
+  padding: 1rem;
+  margin-right: 1rem;
+  margin-top: 10px;
+  white-space: nowrap;
+  overflow: hidden !important;
+  display: inline-block;
+}
+
+@media only screen and (max-width: 750px) {
+  .groupButtons {
+    flex-direction: column;
+  }
+
+  .groupButton {
+    margin-top: 1rem;
+    width: 100%;
+  }
+
+  .bodyText {
+    font-size: 1rem;
+    /* font-weight: bold; */
+  }
+}
